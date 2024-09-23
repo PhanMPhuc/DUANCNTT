@@ -1,0 +1,62 @@
+
+package Week3;
+
+import java.util.Scanner;
+
+public class Cau6 {
+    public static void main(String[] args) {
+        System.out.println("Cac lua chon:");
+        System.out.println("===================");
+        System.out.println("|  1. Phep cong.  |");
+        System.out.println("|  2. Phep tru.   |");
+        System.out.println("|  3. Phep nhan.  |");
+        System.out.println("|  4. Phep chia.  |");
+        System.out.println("|  5. Ket thuc    |");
+        System.out.println("===================");
+        Scanner sc = new Scanner(System.in);
+        int choose, a, b;
+        System.out.print("Nhap lua chon cua ban: ");
+        choose = sc.nextInt();
+        switch (choose) {
+            case 1:
+                System.out.println("\nPhep cong:");
+                System.out.print("Nhap so a: ");
+                a = sc.nextInt();
+                System.out.print("Nhap so b: ");
+                b = sc.nextInt();
+                int tong = a + b;
+                System.out.printf("%d + %d = %d\n",a,b,tong);
+                break;
+            case 2:
+                System.out.println("\nPhep tru:");
+                System.out.print("Nhap so a: ");
+                a = sc.nextInt();
+                System.out.print("Nhap so b: ");
+                b = sc.nextInt();
+                int hieu = a - b;
+                System.out.printf("%d - %d = %d\n",a,b,hieu);
+                break;
+            case 3:
+                System.out.println("\nPhep nhan:");
+                System.out.print("Nhap so a: ");
+                a = sc.nextInt();
+                System.out.print("Nhap so b: ");
+                b = sc.nextInt();
+                int tich = a * b;
+                System.out.printf("%d * %d = %d\n",a,b,tich);
+                break;
+            case 4:
+                System.out.println("\nPhep chia:");
+                System.out.print("Nhap so a: ");
+                a = sc.nextInt();
+                System.out.print("Nhap so b: ");
+                b = sc.nextInt();
+                float thuong = (float) a / b;
+                System.out.printf("%d / %d = %.2f\n",a,b,thuong);
+                break;
+            default:
+                System.out.println("Ban da chon ket thuc.");
+                break;
+        }
+    }
+}
